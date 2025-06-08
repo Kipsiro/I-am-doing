@@ -1,3 +1,92 @@
+// creating variables
+$primary_colour: #007bff;
+$primary-hover-colour: #0054b3;
+$success-colour: green;
+$success-hover-colour:#218838;
+$title-colour: #333;
+$bg-colour: wheat;
+
 body {
-    background-color: aqua;
+    background-color:$bg-colour;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
 }
+
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0.0.10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h1 {
+        color: $primary-hover-colour;
+    }
+
+    h4 {
+        color: #666;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+
+        th,td {
+            padding: 10px;
+            border: 1px solid #ccc ;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 5px;
+        border-radius: 28px;
+        background-color: $primary-colour;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $primary-hover-colour;
+        }
+    }
+
+    input {
+        padding: 30px;
+        margin: 5px;
+        border: solid 1px;
+        border-radius: 5px;
+    }
+
+    #btn_add {
+        background-color: $success-colour;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $success-hover-colour
+        }
+    }
+
+    #btn_update {
+        background-color: $success-colour;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $success-hover-colour;
+        }
+    }
+}
+
